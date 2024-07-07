@@ -86,7 +86,13 @@ const menuGroups = [
           </svg>
         ),
         label: "Posts",
-        route: "/posts",
+        route: "posts",
+        children: [
+          { label: "All Posts", route: "/posts" },
+          { label: "Add New Post", route: "#" },
+          {label: "Categories", route: "#"},
+          {label: "Tags", route: "#"}
+        ],
       },
       {
         icon: (

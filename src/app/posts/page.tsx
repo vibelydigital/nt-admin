@@ -1,8 +1,6 @@
-import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-import Image from "next/image";
 import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
-import Link from "next/link";
+import ListBuilder from "@/components/Tables/ListBuilder";
 
 export const metadata: Metadata = {
   title: "Next.js Profile | TailAdmin - Next.js Dashboard Template",
@@ -10,10 +8,13 @@ export const metadata: Metadata = {
     "This is Next.js Profile page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
 };
 
+
+
 const Profile = () => {
+
   return (
     <DefaultLayout>
-      post page.
+      <ListBuilder />
     </DefaultLayout>
   );
 };
