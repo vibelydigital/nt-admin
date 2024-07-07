@@ -1,13 +1,13 @@
 import DefaultLayout from '@/components/Layouts/DefaultLayout'
 import React from 'react'
 
-function UsersPage() {
+function CollapsePage() {
   return (
     <DefaultLayout>
-        <div>UsersPage</div>
+        <div>CollapsePage</div>
     </DefaultLayout>
     
   )
 }
 
-export default UsersPage
+export default CollapsePage

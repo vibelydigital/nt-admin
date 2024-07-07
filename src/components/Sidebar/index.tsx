@@ -13,7 +13,6 @@ interface SidebarProps {
 
 const menuGroups = [
   {
-    
     menuItems: [
       {
         icon: (
@@ -271,7 +270,7 @@ const menuGroups = [
           </svg>
         ),
         label: "Tools",
-        route: "#",
+        route: "tools",
       },
       {
         icon: (
@@ -306,8 +305,7 @@ const menuGroups = [
           </svg>
         ),
         label: "Settings",
-        route: "#",
-        
+        route: "settings",
       },
       {
         icon: (
@@ -342,8 +340,7 @@ const menuGroups = [
           </svg>
         ),
         label: "Collapse menu",
-        route: "#",
-        
+        route: "collapse-menu",
       },
     ],
   },
@@ -360,8 +357,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        
-        
         <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
           {/* <!-- Sidebar Menu --> */}
           <nav className="px-4 py-4 lg:px-6">

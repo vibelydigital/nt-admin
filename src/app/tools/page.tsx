@@ -1,12 +1,12 @@
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import React from "react";
 
-function SettingsPage() {
+function ToolsPage() {
   return (
     <DefaultLayout>
-      <div>SettingsPage</div>
+      <div>ToolsPage</div>
     </DefaultLayout>
   );
 }
 
-export default SettingsPage;
+export default ToolsPage;
