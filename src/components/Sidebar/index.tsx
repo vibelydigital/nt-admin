@@ -90,8 +90,8 @@ const menuGroups = [
         children: [
           { label: "All Posts", route: "/posts" },
           { label: "Add New Post", route: "/add-post" },
-          {label: "Categories", route: "#"},
-          {label: "Tags", route: "#"}
+          { label: "Categories", route: "/category" },
+          { label: "Tags", route: "#" },
         ],
       },
       {
