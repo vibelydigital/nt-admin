@@ -1,10 +1,10 @@
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
-import ListBuilder from "@/components/Tables/ListBuilder"
+import TableBuilder from "@/components/Tables/TableBuilder"
 
 const TemplatePage = () => {
     return (
       <DefaultLayout>
-        <ListBuilder />
+        <TableBuilder />
       </DefaultLayout>
     );
   };
