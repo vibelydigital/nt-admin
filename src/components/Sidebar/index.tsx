@@ -193,11 +193,16 @@ const menuGroups = [
           </svg>
         ),
         label: "Templates",
-        route: "comments",
-        // children: [
-        //   { label: "Form Elements", route: "/forms/form-elements" },
-        //   { label: "Form Layout", route: "/forms/form-layout" },
-        // ],
+        route: "templates",
+        children: [
+          { label: "Saved Templates", route: "#" },
+          { label: "Theme Builder", route: "#" },
+          { label: "Landing Pages", route: "#" },
+          { label: "Kit Library", route: "#" },
+          { label: "Popups", route: "#" },
+          { label: "Add New", route: "#" },
+          { label: "Categories", route: "#" },
+        ],
       },
       {
         icon: (
