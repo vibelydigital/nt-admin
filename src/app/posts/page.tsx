@@ -4,17 +4,17 @@ import ListBuilder from "@/components/Tables/ListBuilder";
 
 export const metadata: Metadata = {
   title: "nt-admin post",
-  description:
-    "This is Next.js Profile page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
+  description: "This is Next.js Posts page for nt-dashboard",
 };
 
-
-
 const Profile = () => {
-
   return (
     <DefaultLayout>
-      <ListBuilder />
+      <ListBuilder title = {"All pages"} heading= {["Title", "Aouthor", "Categories", "Tags", "Data"]} tableData={[{title: "What do you like most",
+    author: "Maruf",
+    categories: "Web development",
+    tags: ["web,", "seo"],
+    date: "7-8-2024",}]} />
     </DefaultLayout>
   );
 };
