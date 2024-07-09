@@ -19,7 +19,7 @@ const TableBuilder = ({
         <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5">
           {heading.map((head, index) => (
             <div key={index}>
-              <h5 className="nt-table-head">{head}</h5>
+              <h5 className="nt-table-head"> {head}</h5>
             </div>
           ))}
         </div>
