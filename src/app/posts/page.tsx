@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 const Profile = () => {
   return (
     <DefaultLayout>
-      <>Hello post</>
       <TableBuilder
         title={"All posts"}
         heading={["Title", "Aouthor", "Categories", "Tags", "Data"]}
