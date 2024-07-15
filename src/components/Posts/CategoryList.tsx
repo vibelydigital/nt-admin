@@ -1,6 +1,6 @@
 import React from "react";
 
-type TaskType = {
+type CategoryType = {
   task: {
     id: string;
     title: string;
@@ -10,9 +10,10 @@ type TaskType = {
     isFavorite: boolean;
   };
   index: number;
+  handleDeleteCategory: (categoryId:string) => void;
 };
 
-function CategoryList({ task, index, handleDeleteTask }: TaskType) {
+function CategoryList({ task, index, handleDeleteCategory }: CategoryType) {
   return (
     <tr
       key={task.id}
@@ -20,13 +21,12 @@ function CategoryList({ task, index, handleDeleteTask }: TaskType) {
     >
       <td>{index + 1}</td>
       <td>{task.title}</td>
-      {/* {console.log(task[0])} */}
 
       <td>
         <div className="flex items-center justify-center space-x-3">
           <button
             className="text-red-500"
-            onClick={() => handleDeleteTask(task.id)}
+            onClick={() => handleDeleteCategory(task.id)}
           >
             Delete
           </button>

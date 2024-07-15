@@ -3,7 +3,7 @@ import { useState } from "react";
 import CategoryList from "./CategoryList";
 
 function Categories() {
-  const defaultTasks = {
+  const defaultCategory = {
     id: crypto.randomUUID(),
     title: "Learn React Native",
     description:
@@ -13,10 +13,10 @@ function Categories() {
     isFavorite: true,
   };
 
-  const [tasks, setTasks] = useState([defaultTasks]);
-  function handleDeleteTask(taskId:string) {
-    const tasksAfterDelete = tasks.filter((task) => task.id !== taskId);
-    setTasks(tasksAfterDelete);
+  const [categories, setcategories] = useState([defaultCategory]);
+  function handleDeleteCategory(categoryId:string) {
+    const categoriesAfterDelete = categories.filter((categorie) => categorie.id !== categoryId);
+    setcategories(categoriesAfterDelete);
   }
   return (
     <div className="overflow-auto">
@@ -31,7 +31,7 @@ function Categories() {
           </tr>
         </thead>
         <tbody>
-          {tasks.map((task, index) => (<CategoryList task={task} index={index} handleDeleteTask={handleDeleteTask} />))}
+          {categories.map((category, index) => (<CategoryList task={category} key={category.id} index={index} handleDeleteCategory={handleDeleteCategory} />))}
         </tbody>
       </table>
     </div>
