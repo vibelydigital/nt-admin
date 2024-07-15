@@ -5,7 +5,8 @@ const AllPages = () => {
 
     return (
       <DefaultLayout>
-        <TableBuilder />
+        {/* <TableBuilder /> */}
+        <p>pages</p>
       </DefaultLayout>
     );
   };
